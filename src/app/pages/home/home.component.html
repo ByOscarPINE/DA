@@ -1,1 +1,22 @@
-<p>home works!</p>
+<h2 class="mt-3 ms-3">{{name}}</h2>
+<hr>
+
+@for(product of products; track $index){
+    <div class="card m-3 shadow" style="width: 300px;">
+        <img class="card-img-top" [src]=product.image alt="Title" />
+        <div class="card-body">
+            <h4 class="card-title">{{product.name}}</h4>
+            <p class="card-text">{{product.price | currency}}</p>
+            @if (product.stock < 100) {
+                <span class="badge bg-danger">Pocas piezas</span>
+            }
+            <button
+                type="button"
+                class="btn btn-primary"
+            >
+                Comprar
+            </button>
+            
+        </div>
+    </div>
+}

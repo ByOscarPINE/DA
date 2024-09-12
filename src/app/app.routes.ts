@@ -15,5 +15,10 @@ export const routes: Routes = [
     {
         path: 'inventory',
         component: InventoryComponent,
+    },
+    {
+        path: '**',
+        redirectTo: 'home',
+        pathMatch: 'full'
     }
 ];
