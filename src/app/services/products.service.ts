@@ -27,7 +27,7 @@ export class ProductsService {
     },
     {
       category: 'Botanas',
-      description:'Cacahuates japoneses',
+      description:'Cacahuates tipo japoneses',
       image: 'https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1366343_S_1280_F.jpg',
       name: 'Karate',
       price: 10,
@@ -44,7 +44,7 @@ export class ProductsService {
       aviable: true
     },
     {
-      category: 'Botanas',
+      category: 'Galletas',
       description: 'Galletas de chocolate',
       image: 'https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750100012230L.jpg',
       name: 'Principe de chocolate',

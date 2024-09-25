@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductsService } from '../../services/products.service';
+import { CardProductComponent } from '../../components/card-product/card-product.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CardProductComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
